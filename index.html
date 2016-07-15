@@ -5,6 +5,29 @@
   </head>
   <img  src="https://schaefferarnold.github.io/jinyang-1.jpg" alt="My picture" />
   <body>
+    <p>
+      <script>
+      var today = new Date();
+      var todaysDate = today.getDate();
+      var todaysDayOfWeek = today.getDay();
+      var thursday = 4;
+      var friday = 5;
+      document.write("The time right now is: " + today);
+      document.write("<br>");
+      today.setDate(todaysDate - 1);
+      document.write(
+        "<span class=\'yesterday\'>The time yesterday was: "
+       + today + "</span>"
+     );
+     if (todaysDayOfWeek == thursday) {
+       document.write("Today is Thursday, time to learn to code!")
+     } else if (todaysDayOfWeek == friday) {
+       document.write("You missed class yesterday")
+     } else {
+       document.write("Come to class Thursday")
+     }
+
+      </script>
       <h1>Schaeffer Arnold<h1>
       <h2>User Acquisition </h2>
       <address>
@@ -20,12 +43,10 @@
       <h4 class="company-title"><a href="https://www.hired.com" target="_blank">Hired</h4></a>
 
       <div class="work-period">May 2015 - Current</div>
-
+      <div class="work-summary">Attended a LTC Class</div>
       <h4 class="company-title">
         <a href="https://www.wiser.com" target="_blank">Wiser</h4></a>
 
       <div class="work-period">Oct 2015 - Apr 2016</div>
-      <div class="work-summary">Attended a LTC Class</div>
-      <p>Paragraph1</p>
   </body>
 </html>
